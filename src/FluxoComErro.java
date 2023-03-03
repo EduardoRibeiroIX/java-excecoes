@@ -11,7 +11,7 @@ public class FluxoComErro {
         	//c.deposita();
         	metodo1();
         }
-        catch (ArithmeticException | NullPointerException | MinhaExcecao e) 
+        catch (ArithmeticException | NullPointerException e) 
         {
         	String msg = e.getMessage();
 			System.out.println("ArithmeticException " + msg);

@@ -11,7 +11,7 @@ public class Fluxo {
         	//c.deposita();
         	metodo1();
         }
-        catch (ArithmeticException | NullPointerException | MinhaExcecao e) 
+        catch (ArithmeticException | NullPointerException e) 
         {
         	String msg = e.getMessage();
 			System.out.println("ArithmeticException " + msg);
@@ -22,16 +22,22 @@ public class Fluxo {
         
     }
 
-    private static void metodo1() 
+    private static void metodo1()
     {
-    	
+    
         System.out.println("Ini do metodo1");
-        metodo2();
-        System.out.println("Fim do metodo1");
+        try 
+        {
+        	metodo2();
+		} 
+        catch (MinhaExcecao e)
+        {
+        	System.out.println("Fim do metodo1");
+		}
         
     }
 
-    private static void metodo2() 
+    private static void metodo2() throws MinhaExcecao
     {
     	
         System.out.println("Ini do metodo2");
