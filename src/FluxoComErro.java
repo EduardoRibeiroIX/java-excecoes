@@ -1,4 +1,4 @@
-public class Fluxo {
+public class FluxoComErro {
 
     public static void main(String[] args) 
     {
@@ -34,12 +34,7 @@ public class Fluxo {
     private static void metodo2() 
     {
     	
-        System.out.println("Ini do metodo2");
-        
-        throw new MinhaExcecao("Deu muito errado!");
-        
-        
-        ///stem.out.println("Fim do metodo2");  
+        metodo2();  
         
     }
     
