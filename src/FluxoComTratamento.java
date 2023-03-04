@@ -9,7 +9,7 @@ public class FluxoComTratamento {
         	c.deposita();
         	metodo1();
         }
-        catch (ArithmeticException | NullPointerException e) 
+        catch (ArithmeticException | NullPointerException | MinhaExcecao e) 
         {
         	String msg = e.getMessage();
 			System.out.println("ArithmeticException " + msg);
